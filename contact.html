@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Контакты | Мой блог</title>
+</head>
+<body>
+
+    <header>
+        <h1>Мой блог</h1>
+        <nav aria-label="Главное меню">
+            <ul>
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="about.html">Обо мне</a></li>
+                <li><a href="contact.html" aria-current="page">Контакты</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Свяжитесь со мной</h2>
+
+        <form action="https://formspree.io/f/mzdjlonb" method="POST" aria-label="Форма обратной связи">
+            <fieldset>
+                <legend>Отправить сообщение</legend>
+
+                <div>
+                    <label for="name">Имя <span aria-hidden="true">*</span>:</label>
+                    <input type="text" id="name" name="name"
+                           required
+                           minlength="2"
+                           placeholder="Введите ваше имя"
+                           aria-required="true">
+                </div>
+
+                <div>
+                    <label for="email">Email <span aria-hidden="true">*</span>:</label>
+                    <input type="email" id="email" name="email"
+                           required
+                           placeholder="example@mail.com"
+                           aria-required="true">
+                </div>
+
+                <div>
+                    <label for="subject">Тема:</label>
+                    <input type="text" id="subject" name="subject"
+                           placeholder="Тема сообщения">
+                </div>
+
+                <div>
+                    <label for="message">Сообщение <span aria-hidden="true">*</span>:</label>
+                    <textarea id="message" name="message"
+                              rows="5"
+                              required
+                              minlength="10"
+                              placeholder="Напишите ваше сообщение..."
+                              aria-required="true"></textarea>
+                </div>
+
+                <div>
+                    <button type="submit">Отправить сообщение</button>
+                </div>
+            </fieldset>
+        </form>
+
+        <section aria-labelledby="map-heading">
+            <h3 id="map-heading">Я здесь нахожусь</h3>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2245.862310549736!2d37.617633!3d55.751244!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54a5a2a2a2a2a%3A0x2a2a2a2a2a2a2a2a!2z0JzQvtGB0LrQstCw!5e0!3m2!1sru!2sru!4v1234567890123!5m2!1sru!2sru"
+                width="600"
+                height="450"
+                style="border:0;"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+                title="Карта с местоположением"
+                aria-label="Карта Google Maps с моим местоположением">
+            </iframe>
+        </section>
+
+        <section aria-labelledby="social-heading">
+            <h3 id="social-heading">Другие способы связи</h3>
+            <ul>
+                <li>Email: <a href="mailto:danila.davydov.2004@inbox.ru">danila.davydov.2004@inbox.ru</a></li>
+                <li>GitHub: <a href="https://github.com/https://github.com/mrkipdonj-ctrl" target="_blank" rel="noopener noreferrer">github.com/mrkipdonj-ctrl</a></li>
+                <li>Telegram: <a href="https://t.me/Kipdon" target="_blank" rel="noopener noreferrer">@Kipdon</a></li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Мой блог. Все права защищены.</p>
+        <p>Связаться: <a href="danila.davydov.2004@inbox.ru">danila.davydov.2004@inbox.ru</a></p>
+    </footer>
+
+</body>
+</html>

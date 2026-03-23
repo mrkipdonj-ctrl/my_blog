@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мой блог | Главная</title>
+</head>
+<body>
+    <header>
+        <h1>Мой блог</h1>
+        <nav aria-label="Главное меню">
+            <ul>
+                <li><a href="index.html" aria-current="page">Главная</a></li>
+                <li><a href="about.html">Обо мне</a></li>
+                <li><a href="contact.html">Контакты</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section aria-labelledby="welcome-heading">
+            <h2 id="welcome-heading">Добро пожаловать!</h2>
+            <p>Привет! Я <strong>Данила</strong>, мой блог создан для практики и изучения html</p>
+        </section>
+
+        <section aria-labelledby="recent-posts">
+            <h2 id="recent-posts">Последние статьи</h2>
+
+            <article>
+                <header>
+                    <h3>Что такое HTML?</h3>
+                    <p>Опубликовано: <time datetime="2025-03-15">15 марта 2026</time></p>
+                </header>
+                <p>HTML (HyperText Markup Language) — это стандартный язык разметки, используемый для создания структуры и внешнего вида веб-страниц</p>
+                <a href="article.html" aria-label="Читать статью о Git">Читать далее →</a>
+            </article>
+
+            <article>
+                <header>
+                    <h3>HTML5: семантика и доступность</h3>
+                    <p>Опубликовано: <time datetime="2025-03-01">15 марта 2026</time></p>
+                </header>
+                <p>Правильное использование семантических тегов улучшает SEO и делает сайт доступным для людей с ограниченными возможностями...</p>
+                <a href="articles/article2.html" aria-label="Читать статью о семантике HTML">Читать далее →</a>
+            </article>
+
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Мой блог. Все права защищены.</p>
+        <p>Связаться: <a href="danila.davydov.2004@inbox.ru">danila.davydov.2004@inbox.ru</a></p>
+    </footer>
+
+</body>
+</html>
